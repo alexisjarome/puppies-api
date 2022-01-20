@@ -213,7 +213,7 @@ Example: 'Authorization: Bearer brockdotceraatpuppiesdotcom'
 
 
 
-**For Postman collections - please import file Puppies API.postman_collection.json**
+**APIs can be tested in Postman - please import file Puppies API.postman_collection.json**
 
 
 
