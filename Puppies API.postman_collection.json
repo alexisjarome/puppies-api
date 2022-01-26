@@ -40,7 +40,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\"email\":\"mark.klein@puppies.com\", \"password\":\"foo123\"}",
+					"raw": "{\"email\":\"brock.cera@puppies.com\", \"password\":\"brocker123\"}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -68,7 +68,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Bearer markdotkleinatpuppiesdotcom",
+						"value": "Bearer brockdotceraatpuppiesdotcom",
 						"type": "text"
 					}
 				],
@@ -82,15 +82,13 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/users/1/post",
+					"raw": "http://localhost:8080/post",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
-						"users",
-						"1",
 						"post"
 					]
 				}
@@ -104,23 +102,21 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Bearer markdotkleinatpuppiesdotcom",
+						"value": "Bearer brockdotceraatpuppiesdotcom",
 						"type": "text"
 					}
 				],
 				"url": {
-					"raw": "http://localhost:8080/users/1/post/like/6",
+					"raw": "http://localhost:8080/post/like/10",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
-						"users",
-						"1",
 						"post",
 						"like",
-						"6"
+						"10"
 					]
 				}
 			},
@@ -133,7 +129,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Bearer brockdotceraatpuppiesdotcom",
+						"value": "Bearer janedotrazatpuppiesdotcom",
 						"type": "text"
 					}
 				],
@@ -195,7 +191,24 @@
 			"name": "Get Liked Posts",
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer brockdotceraatpuppiesdotcom",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/likedPosts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"likedPosts"
+					]
+				}
 			},
 			"response": []
 		},
@@ -203,7 +216,20 @@
 			"name": "Get User Posts",
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/users/9/posts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"9",
+						"posts"
+					]
+				}
 			},
 			"response": []
 		}
